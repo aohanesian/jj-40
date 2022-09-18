@@ -2,7 +2,7 @@
 
 (function () {
     const userDataObj = JSON.parse(localStorage.getItem(`formData`));
-    console.log(userDataObj)
+    if (userDataObj === null) alert(`no data`);
 
     // let result = Object.entries(userDataObj).map(([key, value]) => `${key} = ${value}`).join(`\n`);
     // console.log(result);

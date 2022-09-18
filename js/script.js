@@ -1,6 +1,7 @@
 `use strict`;
 
 (function () {
+    localStorage.clear()
     const form = document.querySelector(`#form`);
     form.addEventListener(`submit`, (e) => {
         e.preventDefault();
